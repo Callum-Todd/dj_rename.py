@@ -10,5 +10,4 @@ This is a python script created to semi automate the process of looking up a mus
 3. Run the script  
   `python rename.py`
 
-
-Written in Python 2.7
+rename3.py should be used if the user is using Python3
