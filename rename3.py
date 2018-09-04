@@ -46,7 +46,7 @@ def ProcessFolder(current):
         #Creates the new directory name
         NewName = "[" + catno + "] " + Artist + " - " + Release + " (" + year + ")"
         print(NewName)
-        time.sleep(2)
+        time.sleep(1)
         os.rename(DirArray[current], NewName)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("~~~~ Music Folder File Renamer ~~~~")
