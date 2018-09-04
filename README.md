@@ -15,4 +15,4 @@ Information about the single or EP is obtained from [Discogs.](https://discogs.c
 4. Run the script<br>
   `python rename.py`
 
-Written in Python 2.7
+Written in Python 3
