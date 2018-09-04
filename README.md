@@ -4,7 +4,7 @@ rename.py is a python script created to semi-automate the process of batch renam
 
 Information about the single or EP is obtained from [Discogs.](https://discogs.com)
 
-![Alt Text](https://preview.ibb.co/gdoW7z/Peek_2018_09_04_11_16.gif)
+![Alt Text](https://image.ibb.co/bs7SVK/Peek_2018_09_04_11_16.gif)
 
 #### Instructions:
 
