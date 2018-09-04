@@ -1,13 +1,18 @@
-###  Music Folder Script - rename.py
+### Music Folder Script - rename.py
 
-This is a python script created to semi automate the process of looking up a music releases Catalog ID and year of release from [Discogs.com](http://www.discogs.com/), and inserting them inside the the folders new name.
+rename.py is a python script created to semi-automate the process of batch renaming my music collection.
 
+Information about the single or EP is obtained from [Discogs.](https://discogs.com)
 
-##### Instructions:
-1. Copy rename.py to the directory that contains folders to be renamed
-2. Open Terminal and move to that directory using `cd`  
+![Alt Text](https://preview.ibb.co/gdoW7z/Peek_2018_09_04_11_16.gif)
+
+#### Instructions:
+
+1. Install BeautifulSoup using `pip install bs4 --user`
+2. Copy rename.py to the directory that contains folders to be renamed
+3. Open Terminal and move to that directory using `cd`<br>
   `cd /Music/yourpath/`
-3. Run the script  
+4. Run the script<br>
   `python rename.py`
 
-rename3.py should be used if the user is using Python3
+Written in Python 2.7
