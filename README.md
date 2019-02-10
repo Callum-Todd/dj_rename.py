@@ -2,7 +2,7 @@
 
 rename.py is a python script created to semi-automate the process of batch renaming my music collection.
 
-Information about the single or EP is obtained from [Discogs.](https://discogs.com)
+Information about the single or EP is obtained from [Discogs.](https://discogs.com) using BeautifulSoup 4.
 
 ![Alt Text](https://image.ibb.co/bs7SVK/Peek_2018_09_04_11_16.gif)
 
@@ -13,6 +13,6 @@ Information about the single or EP is obtained from [Discogs.](https://discogs.c
 3. Open Terminal and move to that directory using `cd`<br>
   `cd /Music/yourpath/`
 4. Run the script<br>
-  `python rename3.py`
+  `python3 rename3.py`
 
 Written in Python 3
