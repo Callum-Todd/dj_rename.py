@@ -2,14 +2,13 @@ import os
 import sys
 import time
 import webbrowser
-from urllib.request import urlopen
+from urllib import urlopen
 from bs4 import BeautifulSoup
-
+Total = 0
 
 # Setup / Welcome function definition
 def Setup():
     os.system('cls' if os.name == 'nt' else 'clear')
-    Total = len(DirArray)
 
     print("~~~~ Music Folder File Renamer ~~~~")
     print("There are (%d) releases to be processed" % Total)
@@ -19,8 +18,8 @@ def Setup():
     print("~~~~ Music Folder File Renamer ~~~~")
 
 # Process function definition - for each folder in root directory
-def ProcessFolder(current):
-    print(DirArray[current])
+def ProcessFolder():
+    print(DirArray[i])
     Skip = input("Skip release? Yes: Anykey + Enter | No: Enter")
 
     if Skip:
@@ -54,17 +53,25 @@ def ProcessFolder(current):
         NewName = "[" + catno + "] " + Artist + " - " + Release + " (" + year + ")"
         print(NewName)
         time.sleep(1)
-        os.rename(DirArray[current], NewName)
+        os.rename(DirArray[i], NewName)
         os.system('cls' if os.name == 'nt' else 'clear')
         print("~~~~ Music Folder File Renamer ~~~~")
 
 # Main Execution
 DirArray = os.listdir(os.getcwd())
-DirArray.remove(sys.argv[0])
+Total = len(DirArray)
 Setup()
+# DirArray.remove("rename3")
+i = 0
+while i < Total:
+    ProcessFolder()
+    i += 1
+# del DirArray[0]
 
-for index, item in enumerate(DirArray):
-    ProcessFolder(index)
+# for index, item in enumerate(DirArray):
+#     ProcessFolder(index)
+# for value in DirArray:
+#     ProcessFolder(value)
 
 print("All new releases have been processed, exiting now...\n")
 sys.exit()
