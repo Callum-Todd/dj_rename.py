@@ -2,9 +2,7 @@
 
 rename.py is a python script created to semi-automate the process of batch renaming my music collection.
 
-Information about the single or EP is obtained from [Discogs.](https://discogs.com) using BeautifulSoup 4.
-
-![Alt Text](https://image.ibb.co/bs7SVK/Peek_2018_09_04_11_16.gif)
+Information about the single or EP is obtained from [Discogs](https://discogs.com) through web scraping. (Beautiful Soup 4
 
 #### Instructions:
 
